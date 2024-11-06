@@ -1,6 +1,15 @@
 function runningSum(arr) {
-  //Start coding here
+  let result = [];
+  let sum = 0;
+ for (let i = 0; i < arr.length; i++) {
+    sum += arr[i]; // บวกค่าในตำแหน่งปัจจุบันเข้ากับผลรวม
+    console.log(sum)
+    result.push(sum); // เพิ่มผลรวมลงในอาร์เรย์ result
+  }
+
+  return result; 
 }
+
 
 let result1 = runningSum([1, 2, 3, 4]);
 let result2 = runningSum([3, 1, 2, 10, 1]);
